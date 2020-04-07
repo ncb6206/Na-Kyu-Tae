@@ -14,7 +14,7 @@ void main(void)
         input[i] = i;
 
     printf("[----- [NA KYU TAE] [2017038073] -----]\n"); //이름과 학번 출력
-    /* for checking call by reference */
+    /* call by reference 확인*/
     printf("address of input = %p\n", input); //input의 주소 출력
 
     answer = sum(input, MAX_SIZE); //input 배열의 전체 합을 answer에 대입
@@ -28,9 +28,9 @@ float sum(float list[], int n)
     printf("address of list = %p\n\n", &list); //list의 주소값 출력
 
     int i; //지역변수 i 선언
-    float tempsum = 0; //초기화
-    //tempsum에 list배열의 전체 합 대입
+    float tempsum = 0; //tempsum변수 초기화
+    //tempsum에 list배열의 전체 합 대입(list[0]~list[n-1]까지의 합을 tempsum에 저장)
     for(i=0; i < n; i++) 
         tempsum += list[i];
-    return tempsum;
+    return tempsum; //tempsum 값 반환
 }
