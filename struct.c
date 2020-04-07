@@ -6,7 +6,7 @@ struct student1 {
     int studentId; //학번
     char grade; //성적
 };
-//student2 구조체 선언
+//student2 구조체 선언(typedef사용)
 typedef struct {
     char lastName; //이름
     int studentId; //학번
@@ -36,11 +36,11 @@ int main()
     printf("st3.studentId = %d\n", st3.studentId); //st3의 학번 출력
     printf("st3.grade = %c\n", st3.grade); //st3의 성적 출력
 
-    /* 동일한 값인지에 대한 여부 
+    /* 동일한 값인지에 대한 여부 확인
     if(st3 == st2) //st3와 st2의 값이 같으면
         printf("equal\n"); //같다 출력
     else //다르면
         printf("not equal\n"); //같지 않다 출력
-    */    
+    */
     return 0;    
 }
