@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//padding을 증명하기 위한 student 구조체 선언
+//padding을 증명하기 위한 student 구조체 선언(padding 없이 다 더하면 18bytes차지)
 struct student {
     char lastName[13];  /* 13 bytes의 공간 차지 */
     int studentId;      /* 4 bytes의 공간 차지 */
