@@ -23,6 +23,7 @@ void print1 (int *ptr, int rows)
 
     int i; //지역변수 i 선언
     printf ("Address \t Contents\n"); //Address Contents 출력
+    //i=0부터 I=rows-1까지 I를 1씩 증가시키며 ptr+i주소와 ptr+i의 값 출력
     for(i = 0; i < rows; i++)
         printf("%p \t  %5d\n", ptr + i, *(ptr + i)); 
     printf("\n");
